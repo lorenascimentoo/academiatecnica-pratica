@@ -12,12 +12,11 @@ public class CadastroDeProdutos {
         System.out.println("\t============== CADASTRO DE PRODUTOS ==============");
         System.out.println("\tBem vindo, adicione as informacoes do produto.");
         System.out.print("\tInforme o nome do produto: ");
-        String nome = sc.next();
+        String nome = sc.nextLine();
         System.out.print("\tInforme a descrição do produto: ");
-        String desc = sc.next();
+        String desc = sc.nextLine();
         System.out.print("\tInforme o valor do produto: ");
         double valor = sc.nextDouble();
-        System.out.println(valor);
         System.out.print("\tInforme a categoria do produto: ");
         String categ = sc.next();
         System.out.println("\t--- PRODUTO CADASTRADO COM SUCESSO! ---");
