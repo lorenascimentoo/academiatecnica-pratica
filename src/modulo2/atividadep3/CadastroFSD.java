@@ -1,4 +1,4 @@
-package modulo2.atividadep2;
+package modulo2.atividadep3;
 
 import java.util.Scanner;
 
