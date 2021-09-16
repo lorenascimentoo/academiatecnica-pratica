@@ -25,6 +25,7 @@ public class CadastroClientes {
                 break;
             case 1 :
                 System.out.println("\t============ CADASTRO DE CLIENTES ===================");
+
                 do {
                     System.out.print("Informe o nome do cliente: ");
                     nome = sc.nextLine();
@@ -67,9 +68,12 @@ public class CadastroClientes {
             default:
                 System.out.println(" --- OPCAO INVALIDA ---");
         }
+
         if (opcao ==1){
             System.out.println("\t --- CLIENTE CADASTRADO COM SUCESSO --- ");
             System.out.printf("\t == Usuario: %s \t == Sobrenome: %s \t == RG: %s \t == CPF: %s",nome,sobrenome,rg,cpf);
         }
+
+
     }
 }
