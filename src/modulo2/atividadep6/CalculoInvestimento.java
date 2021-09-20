@@ -6,7 +6,7 @@ public class CalculoInvestimento {
         double investimentoInicial = 5000.00, investimento=investimentoInicial, juros=0.0, jurosTotal=0.0, valorfinal;
 
         for (int i=1; i<=24;i++){
-            juros += investimento*0.02;
+            juros = investimento*0.02;
             jurosTotal += juros;
             investimento += juros;
         }
