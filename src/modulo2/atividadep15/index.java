@@ -16,5 +16,13 @@ public class index {
         pessoa2.sobrenome = "Specter";
         pessoa2.idade = 38;
 
-    }    
+        imprimir("A primeira pessoa é:", pessoa1);
+        imprimir("A segunda pessoa é:", pessoa2);
+    }
+
+    static void imprimir(String msg,Pessoa pessoa){
+            System.out.print(msg);
+            System.out.printf(" %s %s, %d anos de idade.\n", pessoa.nome, pessoa.sobrenome, pessoa.idade);
+    }
+    
 }
