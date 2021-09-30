@@ -1,6 +1,7 @@
 public class Conta {
-    static int count =0;
-
+    // variavel responsavel pelo controle do numero de saques
+    int count =0;
+    // variavel responsavel pelo valor da conta
     private double saldo;
     
     public void depositar(double valorDeposito){
@@ -9,29 +10,32 @@ public class Conta {
 
     public void sacar(double valorSaque){
         saldo -= valorSaque;
-        Conta.count++;
+        count++;
     }
 
     public void transferir(double valorTransf, Conta recebe){
         sacar(valorTransf);
         recebe.depositar(valorTransf);
     }
-
+    // metodo que subtrai o valor da taxa do saldo, não poderia ser utilizado o sacar pq se nao conta como saque
     public void descontaTaxa(double taxa){
         saldo -= taxa;
     }
 
+    // metodo utilizado se a quantidade de saques alcancou o limite definido
     public boolean verificaLimiteSaque(){ 
-        if(Conta.count == 5){
-            Conta.count = 0;
+        if(count == 5){
+            count = 0;
             return false;
         }
         return true;
     }
 
+    // exibe a mensagem de realizacao da transacao e o valor da taxa
     public void imprimeTransacao(String msg, double taxa){
         System.out.println("====== TRANSAÇÃO REALIZADA COM SUCESSO ======");
         System.out.println(msg+""+taxa);
+        System.out.printf("---- SALDO DA CONTA: %.2f\n",saldo);
         System.out.println("=============================================\n");
     }
 
