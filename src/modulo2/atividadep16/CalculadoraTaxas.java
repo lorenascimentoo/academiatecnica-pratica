@@ -2,15 +2,18 @@
 public class CalculadoraTaxas {
 
     public double taxaTransferencia(double valorTransf, Conta saque){
-        double taxaTransf = valorTransf * (0.001)/100;
-        saque.sacar(taxaTransf);
+        double taxaTransf = valorTransf * 0.001;
+        saque.descontaTaxa(taxaTransf);
         return taxaTransf;
     }
 
-    public double taxaSaque(Conta saque){
-        double taxa = 1.30;
-        saque.sacar(taxa);
-        return taxa;
-    }
-    
+    public double taxaSaque(boolean limite,Conta saque){
+        
+        if(!limite){
+            double taxa = 1.30;
+            saque.descontaTaxa(taxa);
+            return taxa;
+        }
+        return 0.0;      
+    }    
 }

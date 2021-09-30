@@ -3,19 +3,29 @@ public class Conta {
 
     private double saldo;
     
-
     public void depositar(double valorDeposito){
         saldo += valorDeposito;
     }
 
     public void sacar(double valorSaque){
         saldo -= valorSaque;
-        count++;
+        Conta.count++;
     }
 
-    public void transferir(double valorTransf, Conta transfere, Conta recebe){
-        transfere.sacar(valorTransf);
+    public void transferir(double valorTransf, Conta recebe){
+        sacar(valorTransf);
         recebe.depositar(valorTransf);
     }
 
+    public void descontaTaxa(double taxa){
+        saldo -= taxa;
+    }
+
+    public boolean verificaLimiteSaque(){ 
+        if(Conta.count == 5){
+            Conta.count = 0;
+            return false;
+        }
+        return true;
+    }
 }
