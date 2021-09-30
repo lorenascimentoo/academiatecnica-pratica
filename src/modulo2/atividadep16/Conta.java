@@ -28,4 +28,11 @@ public class Conta {
         }
         return true;
     }
+
+    public void imprimeTransacao(String msg, double taxa){
+        System.out.println("====== TRANSAÇÃO REALIZADA COM SUCESSO ======");
+        System.out.println(msg+""+taxa);
+        System.out.println("=============================================\n");
+    }
+
 }
