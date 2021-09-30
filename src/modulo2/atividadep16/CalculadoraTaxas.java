@@ -3,7 +3,7 @@ public class CalculadoraTaxas {
 
     // metodo que recebe o valor da transferencia, calcula a taxa e retorna a taxa
     public double taxaTransferencia(double valorTransf){
-        double taxaTransf = valorTransf * 0.001;
+        double taxaTransf = valorTransf * (0.001/100);
         return taxaTransf;
     }
 

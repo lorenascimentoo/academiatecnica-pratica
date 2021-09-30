@@ -32,9 +32,9 @@ public class Conta {
     }
 
     // exibe a mensagem de realizacao da transacao e o valor da taxa
-    public void imprimeTransacao(String msg, double taxa){
+    public void imprimeTransacao(String operacao, double valor,double taxa){
         System.out.println("====== TRANSAÇÃO REALIZADA COM SUCESSO ======");
-        System.out.println(msg+""+taxa);
+        System.out.printf("Valor de %s: %.2f  || TAXA: %.2f \n",operacao,valor,taxa);
         System.out.printf("---- SALDO DA CONTA: %.2f\n",saldo);
         System.out.println("=============================================\n");
     }
