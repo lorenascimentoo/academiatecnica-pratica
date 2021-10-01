@@ -13,7 +13,7 @@ public class CalculadoraDeImpostos {
     // metodo utilizado para calculo do IOF
     public double calcularIOF(double valorBase, double taxaIof){
         //calculo IOF é o valor * a taxa de iof aplicada
-        valorIof = valorBase * (taxaIof/100); 
+        valorIof = valorBase * (taxaIof/100);
         return valorIof;
     }
     
