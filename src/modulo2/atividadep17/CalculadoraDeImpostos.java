@@ -18,22 +18,21 @@ public class CalculadoraDeImpostos {
     }
     
     // metodo utilizado para calculo do IR
-    public double calcularIR(double valorBase){
+    public double calcularIRAnual(double valorBase){
         //sera realizado a deducao de IR com a base de calculo anual
         //foi utilizada a tabela de IR do ano base 2020
         
         if(valorBase<=22847.76){
             valorIr = 0;
         }else if(valorBase > 22847.76 && valorBase <= 33919.80){
-            valorIr = valorBase * (7.5/100);
+            valorIr = 1713.58;
         }else if(valorBase > 33919.80 && valorBase <= 45012.60){
-            valorIr = valorBase * (15/100);
+            valorIr = 4257.57;
         }else if(valorBase > 45012.60 && valorBase <= 55976.16){
-            valorIr = valorBase * (22.5/100);
+            valorIr = 7633.51;
         }else if(valorBase > 55976.16){
-            valorIr = valorBase * (27.5/100);
+            valorIr = 10432.32;
         } 
-             
         return valorIr;
     }
 }
