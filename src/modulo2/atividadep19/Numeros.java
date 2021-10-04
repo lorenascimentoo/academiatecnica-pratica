@@ -14,5 +14,11 @@ public class Numeros {
         numeros[7] = 8;
         numeros[8] = 9;
         numeros[9] = 10;
+
+        System.out.println("===== IMPRESSAO DO ARRAY =====");
+        for(int i=0; i< numeros.length;i++){
+            System.out.printf("POSICAO: %d || - NUMERO: %d\n",i,numeros[i]);
+        }
+        System.out.println("===============================");
     }
 }
