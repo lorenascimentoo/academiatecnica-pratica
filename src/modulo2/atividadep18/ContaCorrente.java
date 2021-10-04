@@ -1,6 +1,6 @@
 public class ContaCorrente {
-    int agencia;
-    int numero;
-    int codCliente;
-    double saldo;
+    private int agencia;
+    private int numero;
+    private int codCliente;
+    private double saldo;
 }
