@@ -47,3 +47,12 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP16** : Primeiros conceitos de Orientação a Objetos 
 >[\atividadep16](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep16)
+
+- **ATP17** : Primeiros conceitos de Orientação a Objetos 
+>[\atividadep17](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep17)
+
+- **ATP18** : Primeiros conceitos de Orientação a Objetos 
+>[\atividadep18](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep18)
+
+- **ATP19** : Primeiros conceitos de coleções em Java 
+>[\atividadep19](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep19)
