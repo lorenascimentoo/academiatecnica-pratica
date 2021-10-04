@@ -1,8 +1,9 @@
 public class PessoaFisica {
-    int codigo;
-    String nome;
-    String sobrenome;
-    Byte idade;
-    String rg;
-    String cpf;
+    //encapsulamento dos atributos, tornando-os privados
+    private int codigo;
+    private String nome;
+    private String sobrenome;
+    private Byte idade;
+    private String rg;
+    private String cpf;
 }
