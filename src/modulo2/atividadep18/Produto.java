@@ -1,6 +1,8 @@
 public class Produto {
-    int codigo;
-    String nome;
-    String descricao;
-    double valor;    
+    // fazendo o encapsulamento dos atributos
+    // tornando-os privados
+    private int codigo;
+    private String nome;
+    private String descricao;
+    private double valor;    
 }
