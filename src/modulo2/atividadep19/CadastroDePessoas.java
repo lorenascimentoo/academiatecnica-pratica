@@ -55,5 +55,19 @@ public class CadastroDePessoas {
         pessoasFisicas[2]=p3;
         pessoasFisicas[3]=p4;
         pessoasFisicas[4]=p5;
+
+        // impressao dos dados do array
+        System.out.println("===== LISTA DE PESSOAS FISICAS =====");
+        for (PessoaFisica pessoaFisica : pessoasFisicas) {
+            System.out.println(); //apenas para visualizacao no terminal
+            System.out.println("Codigo: "+pessoaFisica.getCodigo());
+            System.out.println("Nome: "+pessoaFisica.getNome());
+            System.out.println("Sobrenome: "+pessoaFisica.getSobrenome());
+            System.out.println("Idade: "+pessoaFisica.getIdade());
+            System.out.println("RG: "+pessoaFisica.getRg());
+            System.out.println("Nome: "+pessoaFisica.getCpf());
+            System.out.println(); //apenas para visualizacao no terminal            
+        }
+        System.out.println("====================================");
     }
 }
