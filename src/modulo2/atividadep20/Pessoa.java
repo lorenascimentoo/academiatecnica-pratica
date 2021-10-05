@@ -1,6 +1,7 @@
 
 public class Pessoa {
-    String nome;
-    String sobrenome;
-    int matricula;    
+    // encapsulamento dos atributos com a palavra reservada private
+    private String nome;
+    private String sobrenome;
+    private int matricula;    
 }

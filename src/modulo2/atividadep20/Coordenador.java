@@ -1,6 +1,7 @@
 // coordenador herdando as carateristicas de funcionario
 // em java a palavra reservada extends indica heranca
 public class Coordenador extends Funcionario{
-    String curso_coordenado;
-    double bonus;
+    // encapsulamento dos atributos com a palavra reservada private
+    private String curso_coordenado;
+    private double bonus;
 }
