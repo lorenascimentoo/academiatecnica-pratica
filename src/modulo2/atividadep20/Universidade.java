@@ -21,7 +21,7 @@ public class Universidade {
         // uma vez que herda da classe funcionario, consequentemente, herda também os atributos da classe pessoa
         c.setNome("Kurt");
         c.setSobrenome("Weller");
-        c.setMatricula(0020);
+        c.setMatricula(1220);
         // atributos herdados da classe funcionario
         c.setDepartamento("Gerencia");
         c.setSalario(24500.99);
@@ -33,9 +33,56 @@ public class Universidade {
         // atributos herdados da classe pessoa
         a.setNome("Jane");
         a.setSobrenome("Doe");
-        a.setMatricula(0010);
+        a.setMatricula(10);
         // atributos da propria classe aluno
         a.setCurso("Java - Orientação a Objetos");
         a.setTurma("A");
+
+        //IMPRESSAO DOS DADOS
+
+        //utilizado os metodos getter para impressao dos dados do objeto FUNCIONARIO
+        System.out.println("===== DADOS DO FUNCIONARIO =====");
+        //chama o metodo usado para impressao dos dados contidos na classe pessoa
+        // passando os valores dos metodos getters dos atributos
+        imprimirDadosPessoais(f.getNome(), f.getSobrenome(), f.getMatricula());
+        // chama o metodo usado para impressao dos dados contidos na classe funcionario
+        imprimirDadosFuncionario(f.getSalario(), f.getDepartamento());
+        System.out.println("================================");
+        System.out.println();
+
+        //utilizado os metodos getter para impressao dos dados do objeto COORDENADOR
+        System.out.println("===== DADOS DO COORDENADOR =====");
+        //chama o metodo usado para impressao dos dados contidos na classe pessoa
+        // passando os valores dos metodos getters dos atributos
+        imprimirDadosPessoais(c.getNome(), c.getSobrenome(), c.getMatricula());
+        // chama o metodo usado para impressao dos dados contidos na classe funcionario
+        imprimirDadosFuncionario(c.getSalario(), c.getDepartamento());
+        System.out.println("Curso coordenado: "+c.getCurso_coordenado());
+        System.out.println("Bonus: "+c.getBonus());
+        System.out.println("================================");
+        System.out.println();
+
+        //utilizado os metodos getter para impressao dos dados do objeto ALUNO
+        System.out.println("===== DADOS DO ALUNO =====");
+        // chama o metodo usado para impressao dos dados contidos na classe pessoa
+        // passando os valores dos metodos getters dos atributos
+        imprimirDadosPessoais(a.getNome(), a.getSobrenome(), a.getMatricula());
+        System.out.println("Curso: "+a.getCurso());
+        System.out.println("Turma: "+a.getTurma());
+        System.out.println("================================");
+
+    }
+
+    // metodo usado para impressao dos dados da classe pessoa
+    public static void imprimirDadosPessoais(String nome, String sobrenome, int matricula){
+        System.out.println("Nome: "+nome);
+        System.out.println("Sobrenome: "+sobrenome);
+        System.out.println("Matrícula: "+matricula);
+    }
+
+    // metodo usado para impressao dos dados da classe funcionario
+    public static void imprimirDadosFuncionario(double salario, String departamento){
+        System.out.println("Salario: "+salario);
+        System.out.println("Departamento: "+departamento);
     }
 }
