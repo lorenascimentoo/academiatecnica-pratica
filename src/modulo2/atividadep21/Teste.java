@@ -18,8 +18,13 @@ public class Teste {
         // criando uma variavel para guardar o valor anterior a transferencia do objeto conta corrente
         cc.setSaldo(200);
         double cc_saldo_anterior = cc.getSaldo();
-        // realizando uma transferencia no objeto do tipo conta corrente
+        // realizando 6 chamadas de transferencia no objeto do tipo conta corrente para testar os calculos das taxas
         cc.transferencia(50);
+        cc.transferencia(10);
+        cc.transferencia(10);
+        cc.transferencia(10);
+        cc.transferencia(10);
+        cc.transferencia(5);
 
         // === IMPRESSAO DOS DADOS ===
 
