@@ -19,4 +19,9 @@ public class Conta {
     public double getSaldo() {
         return saldo;
     }
+
+    // metodo recebe um valor e subtrai do saldo
+    public void transferencia(double valor){
+        this.saldo -= valor;
+    }
 }
