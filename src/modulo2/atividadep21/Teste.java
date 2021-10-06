@@ -5,6 +5,8 @@ public class Teste {
         // utilizando os metodos setters para atribuicao dos valores dos atributos da classe conta
         c.setCod_cliente(1);
         c.setSaldo(100);
+        // realizando uma transferencia no objeto do tipo conta
+        c.transferencia(20);
 
         // inicializacao de um novo objeto do tipo Conta Corrente
         ContaCorrente cc = new ContaCorrente();
@@ -12,5 +14,7 @@ public class Teste {
         // utilizando os metodos setters para atribuicao dos valores dos atributos
         cc.setCod_cliente(2);
         cc.setSaldo(200);
+        // realizando uma transferencia no objeto do tipo conta corrente
+        c.transferencia(50);
     }
 }
