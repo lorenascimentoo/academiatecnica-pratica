@@ -56,3 +56,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP19** : Primeiros conceitos de coleções em Java 
 >[\atividadep19](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep19)
+
+- **ATP20** : Conceitos de herança em Java 
+>[\atividadep20](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep20)
+
+- **ATP21** : Conceitos de sobrescrita de métodos em Java 
+>[\atividadep21](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep21)
