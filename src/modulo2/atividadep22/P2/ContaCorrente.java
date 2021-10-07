@@ -22,4 +22,24 @@ public class ContaCorrente {
     public void deposito(double valor){
         this.saldo += valor;
     }
+
+    // criacao dos metodos getters para acesso dos valores
+    // nao e boa pratica acessar diretamente os atributos da classe
+    // assim sendo necessario os metodos
+    public double getSaldo() {
+        return saldo;
+    }
+    public double getTaxa_saque() {
+        return taxa_saque;
+    }
+    public int getCodigo_cliente() {
+        return codigo_cliente;
+    }
+
+    // metodo toString da classe objeto sobrescrito
+    @Override
+    public String toString() {
+        String mensagem = "== CODIGO DO CLIENTE: " + this.getCodigo_cliente() +"\n"+"== TAXA DE SAQUE: " + this.getTaxa_saque() +"\n"+"== SALDO: " + this.getSaldo();
+        return mensagem;
+    }
 }
