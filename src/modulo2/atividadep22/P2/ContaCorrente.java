@@ -12,4 +12,9 @@ public class ContaCorrente {
         this.saldo = saldo;
         this.codigo_cliente = codigo_cliente;
     }
+
+    // metodo de saque, debita o valor e taxa de saque e atribui ao saldo
+    public void saque(double valor){
+        this.saldo -= (valor + this.taxa_saque);
+    }
 }
