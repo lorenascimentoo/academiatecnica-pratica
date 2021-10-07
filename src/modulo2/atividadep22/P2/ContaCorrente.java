@@ -17,4 +17,9 @@ public class ContaCorrente {
     public void saque(double valor){
         this.saldo -= (valor + this.taxa_saque);
     }
+
+    // metodo de deposito, soma o valor e atribui ao saldo
+    public void deposito(double valor){
+        this.saldo += valor;
+    }
 }
