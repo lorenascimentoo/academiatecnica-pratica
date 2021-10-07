@@ -11,4 +11,9 @@ public class Calculadora {
     public double soma(double num1, double num2){
         return num1+num2;
     }
+    
+    // metodo que recebe tres float soma e retorna como float
+    public float soma(float num1, float num2,float num3){
+        return num1+num2+num3;
+    }
 }
