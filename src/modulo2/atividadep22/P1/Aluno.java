@@ -30,5 +30,11 @@ public class Aluno {
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
+
+    @Override
+    public String toString() {
+        String atributos = "== Nome Completo: "+this.getNome_completo()+"\n"+" == Idade: " + this.getIdade()+"\n"+" == MATRICULA: " + this.getMatricula();
+        return atributos;
+    }
     
 }
