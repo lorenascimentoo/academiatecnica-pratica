@@ -18,12 +18,14 @@ public class Tela {
         a2.setMatricula(10211);
 
         System.out.println("============= DADOS DO ALUNO =============");
+        // com a sobrescrita de metodo ao chamar o metodo toString(chamado por padrao no println), ele usa o metodo da classe aluno
         System.out.println(a1);
         System.out.println("==========================================");
         
         System.out.println();
         
         System.out.println("============= DADOS DO ALUNO =============");
+        // com a sobrescrita de metodo ao chamar o metodo toString(chamado por padrao no println), ele usa o metodo da classe aluno
         System.out.println(a2);
         System.out.println("==========================================");
     }
