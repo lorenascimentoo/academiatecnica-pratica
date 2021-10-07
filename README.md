@@ -62,3 +62,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP21** : Conceitos de sobrescrita de métodos em Java 
 >[\atividadep21](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep21)
+
+- **ATP22** : Sobrescrita e sobrecarga de métodos e Metodos Construtores em Java 
+>[\atividadep22](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep22)
