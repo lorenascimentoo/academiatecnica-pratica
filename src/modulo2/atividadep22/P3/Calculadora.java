@@ -6,4 +6,9 @@ public class Calculadora {
     public int soma(int num1, int num2){
         return num1+num2;
     }
+
+    // metodo que recebe dois double soma e retorna como double
+    public double soma(double num1, double num2){
+        return num1+num2;
+    }
 }
