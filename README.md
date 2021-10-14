@@ -65,3 +65,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP22** : Sobrescrita e sobrecarga de métodos e Metodos Construtores em Java 
 >[\atividadep22](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep22)
+
+- **ATP23** : Utilizacao do padrão de arquitetura MVC em Java 
+>[\atividadep23](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep23)
