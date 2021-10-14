@@ -18,7 +18,15 @@ public class Livro {
         this.autor = autor;
         this.editora = editora;
     }
-    
+
+    //metodo construtor para inicializar um livro a ser atualizado
+    public Livro(int id, String titulo, String autor, String editora){
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.editora = editora;
+    }
+
     // metodos de acesso(getters) e modificacao(setters) dos atributos
     public int getId() {
         return id;
