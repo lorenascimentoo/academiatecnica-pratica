@@ -43,5 +43,8 @@ public class Main {
 
         // Conversao de um object em computador
         Computador compObj = (Computador) objComp;
+
+        // Conversao de um object em notebook
+        Notebook noteObj = (Notebook) objNote;
     }
 }
