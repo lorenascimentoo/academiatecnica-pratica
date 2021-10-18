@@ -14,8 +14,11 @@ public class Main {
         carro1.capacidade_portamalas = "30L";
         carro1.numero_portas = 4;
 
-        //Criacao de um objeto a partir do objeto da classe veiculo
+        //Criacao de um object a partir do objeto da classe veiculo
         Object objV = veiculo1;
-        
+
+        //Criacao de um object a partir do objeto da classe carro
+        Object objC = carro1;
+
     }
 }
