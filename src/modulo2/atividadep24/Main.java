@@ -13,5 +13,9 @@ public class Main {
         // atribuindo valores aos atributos do objeto do tipo carro
         carro1.capacidade_portamalas = "30L";
         carro1.numero_portas = 4;
+
+        //Criacao de um objeto a partir do objeto da classe veiculo
+        Object objV = veiculo1;
+        
     }
 }
