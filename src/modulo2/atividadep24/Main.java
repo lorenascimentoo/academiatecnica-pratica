@@ -30,5 +30,9 @@ public class Main {
         System.out.println("Marca: "+veiculoObj.marca);
         System.out.println("Modelo: "+veiculoObj.modelo);
         System.out.println("Placa: "+veiculoObj.placa);
+
+        // impressao dos dados do objeto carro convertido
+        System.out.println("Numero de portas: "+carroObj.numero_portas);
+        System.out.println("Capacidade porta-malas: "+carroObj.capacidade_portamalas);
     }
 }
