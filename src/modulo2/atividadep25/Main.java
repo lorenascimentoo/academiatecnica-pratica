@@ -52,5 +52,8 @@ public class Main {
 
         //impressao dos dados do objeto computador convertido
         System.out.println(compObj);
+        System.out.println("\n -- \n");
+        //impressao dos dados do objeto notebook convertido
+        System.out.println(noteObj);
     }
 }
