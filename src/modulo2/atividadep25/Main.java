@@ -46,5 +46,11 @@ public class Main {
 
         // Conversao de um object em notebook
         Notebook noteObj = (Notebook) objNote;
+
+        // Conversao de um object em desktop
+        Desktop deskObj = (Desktop) objDesk;
+
+        //impressao dos dados do objeto computador convertido
+        System.out.println(compObj);
     }
 }
