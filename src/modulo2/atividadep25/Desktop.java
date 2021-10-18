@@ -1,4 +1,5 @@
-public class Desktop {
+// a classe desktop herda os atributos da classe computador
+public class Desktop extends Computador{
     public String tamanho_gabinete;
     public String monitor_externo;
     public String fonte;
