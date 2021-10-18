@@ -20,5 +20,8 @@ public class Main {
         //Criacao de um object a partir do objeto da classe carro
         Object objC = carro1;
 
+        //Conversao de um object em um objeto veiculo
+        Veiculo veiculoObj = (Veiculo) objV;
+
     }
 }
