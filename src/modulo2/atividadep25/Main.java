@@ -31,5 +31,17 @@ public class Main {
         dsktp.disco_rigido = "512GB SSD";
         dsktp.memoria_ram = "16 GB";
         dsktp.processador = "RYZEN 7";
+
+        // Criacao de um objeto a partir de computador
+        Object objComp = comp1;
+
+        // Criacao de um objeto a partir de notebook
+        Object objNote = note1;
+
+        // Criacao de um objeto a partir de desktop
+        Object objDesk = dsktp;
+
+        // Conversao de um object em computador
+        Computador compObj = (Computador) objComp;
     }
 }
