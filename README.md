@@ -68,3 +68,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP23** : Utilizacao do padrão de arquitetura MVC em Java 
 >[\atividadep23](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep23)
+
+- **ATP24** : Conceitos de herança e conversao de objetos de classe 
+>[\atividadep24](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep24)
