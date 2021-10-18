@@ -26,5 +26,9 @@ public class Main {
         //Conversao de um object em um objeto carro
         Carro carroObj = (Carro) objC;
 
+        // impressao dos dados do objeto veiculo convertido
+        System.out.println("Marca: "+veiculoObj.marca);
+        System.out.println("Modelo: "+veiculoObj.modelo);
+        System.out.println("Placa: "+veiculoObj.placa);
     }
 }
