@@ -23,5 +23,8 @@ public class Main {
         //Conversao de um object em um objeto veiculo
         Veiculo veiculoObj = (Veiculo) objV;
 
+        //Conversao de um object em um objeto carro
+        Carro carroObj = (Carro) objC;
+
     }
 }
