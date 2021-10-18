@@ -31,17 +31,15 @@ public class Main {
         Carro carroObj = (Carro) objC;
 
         // impressao dos dados do objeto veiculo convertido
-        System.out.println("Marca: "+veiculoObj.marca);
-        System.out.println("Modelo: "+veiculoObj.modelo);
-        System.out.println("Placa: "+veiculoObj.placa);
+        System.out.println(veiculoObj);
+        
         System.out.println();
         System.out.println("--");
         System.out.println();
+        
         // impressao dos dados do objeto carro convertido
-        System.out.println("Marca: "+carroObj.marca);
-        System.out.println("Modelo: "+carroObj.modelo);
-        System.out.println("Placa: "+carroObj.placa);
-        System.out.println("Numero de portas: "+carroObj.numero_portas);
-        System.out.println("Capacidade porta-malas: "+carroObj.capacidade_portamalas);
+        System.out.println(carroObj);
     }
+
+    
 }
