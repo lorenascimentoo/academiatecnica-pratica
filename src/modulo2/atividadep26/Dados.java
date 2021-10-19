@@ -7,6 +7,19 @@ public class Dados {
         this.posicao = 0;
     }
 
+    // retorna o objeto dados
+    public Object[] getDados() {
+        // cria um array auxiliar para nao enviar os valores nulos
+        Object[] retorno = new Object[this.posicao];
+        // varre os dados até a posicao atual
+        for (int i = 0; i < this.posicao; i++) {
+            // atribui o dado do array da classe no array auxiliar
+            retorno[i] = this.dados[i];
+        }
+        // retorna o array auxiliar
+        return retorno;
+    }
+
     // metodo para adicionar dados ao array
     // recebe um tipo object para aceitar qualquer tipo de objeto
     public void add(Object obj){

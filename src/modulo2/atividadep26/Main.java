@@ -25,7 +25,7 @@ public class Main {
         listaDados.add(p1);
         // adicionando o objeto aluno ao array de dados
         listaDados.add(a1);
-
+        
         // instanciando um objeto do tipo pessoa
         Pessoa p2 = new Pessoa();
         // atribuindo os valores ao objeto pessoa
@@ -36,11 +36,16 @@ public class Main {
         // verificando se os dados da pessoa 2 ja estao no array
         //System.out.println(listaDados.contains(p2));
 
-        System.out.println(listaDados.size());
+        for (Object objeto : listaDados.getDados()) {
+            System.out.println(objeto);
+        }
 
         // removendo o objeto aluno do array
-        listaDados.remove(a1);
+        listaDados.remove(p1);
 
-        System.out.println(listaDados.size());
+        System.out.println("ITEM REMOVIDO!\n");
+        for (Object objeto : listaDados.getDados()) {
+            System.out.println(objeto);
+        }
     }
 }
