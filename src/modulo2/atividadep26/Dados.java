@@ -31,4 +31,10 @@ public class Dados {
             this.dados = maisDados;
         }
     }
+
+    //metodo para saber a quantidade de elementos do array
+    public int size(){
+        // retorna o valor da posicao atual do array mais 1, dado que inicia em zero
+        return posicao+1;
+    }
 }
