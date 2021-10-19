@@ -74,3 +74,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP25** : Conceitos de herança, conversao de objetos de classe e sobrescrita de metodos
 >[\atividadep25](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep25)
+
+- **ATP26** : Conversao de objetos de classe, sobrescrita de metodos e uso de array
+>[\atividadep26](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep26)
