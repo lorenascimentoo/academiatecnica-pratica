@@ -38,7 +38,7 @@ public class Dados {
     //metodo para saber a quantidade de elementos do array
     public int size(){
         // retorna o valor da posicao atual do array mais 1, dado que inicia em zero
-        return this.posicao+1;
+        return this.posicao;
     }
 
     // metodo para remover dados do array
@@ -50,15 +50,18 @@ public class Dados {
             if (this.dados[i].equals(obj)) {
                 // caso seja o mesmo objeto, ele reorganiza o vetor
                 // iniciando a varredura na posicao do objeto a ser removido    
-                for( int j = i; i<this.dados.length; j++){
+                for( int j = i; j < this.posicao; j++){
                     // atribui os dados da posicao posterior para a posicao anterior
                     // ex dados[4] = dados[5]
                     this.dados[j] = this.dados[j+1];
+
                 }
                 // decrementa a posicao visto que foi removido um item
                 posicao --;
                 // limpa os dados da ultima posicao inserida
                 this.dados[this.posicao]=null;
+                // após a remoção do objeto, ele para a verificacao
+                break;
             }
         }
     }

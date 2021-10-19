@@ -20,6 +20,7 @@ public class Main {
 
         // instanciando um objeto do tipo dado
         Dados listaDados = new Dados();
+
         // adicionando o objeto pessoa ao array de dados
         listaDados.add(p1);
         // adicionando o objeto aluno ao array de dados
@@ -31,5 +32,15 @@ public class Main {
         p2.nome = "Mel";
         p2.sobrenome="Moonroe";
         p2.idade=30;
+
+        // verificando se os dados da pessoa 2 ja estao no array
+        //System.out.println(listaDados.contains(p2));
+
+        System.out.println(listaDados.size());
+
+        // removendo o objeto aluno do array
+        listaDados.remove(a1);
+
+        System.out.println(listaDados.size());
     }
 }
