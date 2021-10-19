@@ -18,4 +18,10 @@ public class Pessoa {
         // caso nao seja igual retorna false
         return false;
     }
+
+    @Override
+    public String toString() {
+        // retorna a string concatenada com os dados da classe pessoa
+        return "== NOME: "+this.nome+"\n== SOBRENOME: "+this.sobrenome+"\n== IDADE: "+this.idade;
+    }
 }

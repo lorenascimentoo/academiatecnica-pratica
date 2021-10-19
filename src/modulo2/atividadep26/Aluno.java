@@ -17,4 +17,11 @@ public class Aluno extends Pessoa{
         // caso nao seja igual retorna false
         return false;
     }
+
+    @Override
+    public String toString() {
+        // dada a heranca, primeiro chama o metodo da classe mae (pessoa)
+        // depois concatena com a string dos dados da classe aluno
+        return super.toString()+"\n== MATRICULA: "+this.matricula+"\n== TURMA: "+this.turma+"\n== CURSO: "+this.curso;
+    }
 }
