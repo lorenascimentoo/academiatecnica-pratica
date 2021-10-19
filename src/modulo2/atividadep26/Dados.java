@@ -46,7 +46,7 @@ public class Dados {
     public void remove(Object obj){
         // percorre todos os dados do array 
         for (int i = 0; i < this.dados.length; i++) {
-            // verifica se o objeto no array dado é o mesmo obj recebido no metodo
+            // verifica se o objeto no array dados é o mesmo obj recebido no metodo
             if (this.dados[i].equals(obj)) {
                 // caso seja o mesmo objeto, ele reorganiza o vetor
                 // iniciando a varredura na posicao do objeto a ser removido    
@@ -61,5 +61,20 @@ public class Dados {
                 this.dados[posicao]=null;
             }
         }
+    }
+
+    // metodo para verifica se contem um dado no array
+    // recebe um tipo object para aceitar qualquer tipo de objeto
+    public boolean contains(Object obj){
+        // percorre todos os dados do array 
+        for (int i = 0; i < this.dados.length; i++) {
+            // verifica se o objeto no array dados é o mesmo obj recebido no metodo
+            if (this.dados[i].equals(obj)) {
+                // caso encontre, retorna true
+                return true;
+            }
+        }
+        // se nao achar, retorna false
+        return false;
     }
 }
