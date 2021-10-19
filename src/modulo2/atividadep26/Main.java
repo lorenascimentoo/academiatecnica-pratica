@@ -24,5 +24,12 @@ public class Main {
         listaDados.add(p1);
         // adicionando o objeto aluno ao array de dados
         listaDados.add(a1);
+
+        // instanciando um objeto do tipo pessoa
+        Pessoa p2 = new Pessoa();
+        // atribuindo os valores ao objeto pessoa
+        p2.nome = "Mel";
+        p2.sobrenome="Moonroe";
+        p2.idade=30;
     }
 }
