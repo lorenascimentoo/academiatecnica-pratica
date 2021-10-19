@@ -17,5 +17,12 @@ public class Main {
         a1.matricula=20;
         a1.turma="A";
         a1.curso="Gastronomia";
+
+        // instanciando um objeto do tipo dado
+        Dados listaDados = new Dados();
+        // adicionando o objeto pessoa ao array de dados
+        listaDados.add(p1);
+        // adicionando o objeto aluno ao array de dados
+        listaDados.add(a1);
     }
 }
