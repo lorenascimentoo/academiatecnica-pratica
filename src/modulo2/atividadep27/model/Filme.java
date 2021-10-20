@@ -1,8 +1,8 @@
 package model;
 // a classe herda o comportamento da classe base
 public class Filme extends Base{
-    String nacionalidade;
-    String distribuidor;
+    public String nacionalidade;
+    public String distribuidor;
      
     public Filme(){
         super();
