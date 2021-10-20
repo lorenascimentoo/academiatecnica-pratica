@@ -3,9 +3,19 @@ package model;
 public class Filme extends Base{
     String nacionalidade;
     String distribuidor;
-    // dada a heranca, obrigatoriamente e necesssario passar no construtor o id
-    public Filme(int id){
-        super(id);
+     
+    public Filme(){
+        super();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+       if (obj instanceof Filme) {
+          Filme compara = (Filme) obj;
+           if(this.id == compara.id){
+               return true;
+           }
+       }
+       return false;
+    }
 }

@@ -5,10 +5,19 @@ public class Serie extends Base{
     int quant_episodios;
     boolean finalizada;
     String autor;
-
-    // dada a heranca, obrigatoriamente e necesssario passar no construtor o id
-    public Serie(int id){
-        super(id)
+   
+    public Serie(){
+        super();
     }
-    
+
+    @Override
+    public boolean equals(Object obj) {
+       if (obj instanceof Serie) {
+          Serie compara = (Serie) obj;
+           if(this.id == compara.id){
+               return true;
+           }
+       }
+       return false;
+    }
 }
