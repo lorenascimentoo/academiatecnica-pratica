@@ -18,4 +18,10 @@ public class Filme extends Base{
        }
        return false;
     }
+
+
+    @Override
+    public String toString() {
+        return super.toString()+ "\nNacionalidade: "+this.nacionalidade+"\nDistribuidor: "+this.distribuidor;
+    }
 }

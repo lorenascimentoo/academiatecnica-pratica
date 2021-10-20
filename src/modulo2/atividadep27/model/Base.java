@@ -32,5 +32,10 @@ public class Base {
        return false;
     }
 
+    @Override
+    public String toString() {
+        return "id: "+this.id+"\n"+"titulo: "+this.titulo+"\n"+"sinopse: "+this.sinopse+"\n"+"tipo: "+this.tipo+"\n"+"Ano Lancamento: "+this.anoLancamento;
+    }
+
 }
 

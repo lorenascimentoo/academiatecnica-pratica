@@ -20,4 +20,9 @@ public class Serie extends Base{
        }
        return false;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nQuant. temporadas: "+this.quant_temporadas+"\n Quant. episodios: "+this.quant_episodios+"\n finalizada: "+this.finalizada+"\n Autor: "+this.autor;
+    }
 }
