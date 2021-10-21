@@ -77,3 +77,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP26** : Conversao de objetos de classe, sobrescrita de metodos e uso de array
 >[\atividadep26](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep26)
+
+- **ATP27** : Utilização de arquitetura MVC e uso de Generics
+>[\atividadep27](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep27)
+
+- **ATP28** : Conceito de Herança e Composição
+>[\atividadep28](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep28)
