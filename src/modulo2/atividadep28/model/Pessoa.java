@@ -6,7 +6,6 @@ public abstract class Pessoa {
     // atributos publicos do sistema
     public int id;
     public String nome;
-    public String endereco;
     
     // obrigatoriamente ao iniciliazar deve ser informado o id
     public Pessoa(int id){
@@ -32,6 +31,6 @@ public abstract class Pessoa {
     @Override
     public String toString() {
         // retorna a string concatenada com as informacoes da classe
-        return "== ID: "+this.id+"\n== NOME: "+this.nome+"\n== ENDERECO: "+this.endereco;
+        return "== ID: "+this.id+"\n== NOME: "+this.nome;
     }
 }

@@ -4,6 +4,9 @@ package model;
 public class PessoaFisica extends Pessoa{
 
     public String cpf;
+    
+    // utilizando composicao
+       public Endereco endereco;
 
     // dada a heranca a classe mãe pessoa espera um id para inicializacao
     // assim, ao iniciar a pessoa fisica deve ser informado o id
@@ -19,6 +22,6 @@ public class PessoaFisica extends Pessoa{
     @Override
     public String toString() {
         // pela heranca, primeiro chama o metodo toString da classe mae e depois concatena com os dados da classe
-        return super.toString() + "\n== CPF: "+this.cpf;
+        return super.toString() + "\n== CPF: "+this.cpf+"\n== ENDERECO: "+this.endereco.logradouro+","+this.endereco.numero;
     }
 }
