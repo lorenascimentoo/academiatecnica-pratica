@@ -83,3 +83,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP28** : Conceito de Herança e Composição
 >[\atividadep28](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep28)
+
+- **ATP29** : Atividade em dupla, conceito de Herança e Composição
+>[REPOSITÓRIO DA DUPLA: @lorenascimentoo e @Meimoon1](https://github.com/Meimoon1/ATP29Dupla)
