@@ -24,8 +24,13 @@ public class Main {
                 case 3:
                     System.out.printf("A multiplicacao dos numeros %d e %d é: %d",n1,n2, calc.multiplicar(n1, n2));
                     break;
-                case 4: 
-                    System.out.printf("A divisao dos numeros %d e %d é: %d",n1,n2, calc.dividir(n1, n2));
+                case 4:
+                    // implementacao do bloco try/cath para tratamento de excecoes
+                    try{
+                        System.out.printf("A divisao dos numeros %d e %d é: %d",n1,n2, calc.dividir(n1, n2));
+                    } catch(ArithmeticException ex){
+                        System.out.println("Não é possível realizar divisao por zero");
+                    }
                     break;
             }
         }while(opc!=0);
