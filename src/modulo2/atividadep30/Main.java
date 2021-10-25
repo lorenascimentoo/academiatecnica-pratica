@@ -10,7 +10,7 @@ public class Main {
             menu();
             opc = lerNumero(sc, "Informe a operacao desejada: ");
             int n1=0,n2=0;
-            if(opc!=0){
+            if(opc>0 && opc < 5){
                 n1 = lerNumero(sc, "Digite o primeiro numero inteiro: ");
                 n2 = lerNumero(sc, "Digite o segundo numero inteiro: ");
             }
@@ -32,6 +32,11 @@ public class Main {
                         System.out.println("Não é possível realizar divisao por zero");
                     }
                     break;
+                case 0:
+                    System.out.println("Saindo...");
+                default:
+                    System.out.println("Opção informada é inválida!");
+                    break;
             }
         }while(opc!=0);
     }
@@ -43,7 +48,16 @@ public class Main {
 
     public static int lerNumero(Scanner sc, String msg){
         System.out.print(msg);
-        int numero = Integer.parseInt(sc.nextLine());
+        int numero = -1;
+        try{
+            numero = Integer.parseInt(sc.nextLine());
+            if (numero<0) {
+                throw new ArithmeticException();
+            } 
+        } catch(ArithmeticException ex){
+            System.out.println("Valor informado é inválido!");
+            lerNumero(sc, "Digite novamente a opcao: ");
+        }
         return numero;
     }
 
