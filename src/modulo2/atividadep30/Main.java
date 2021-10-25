@@ -34,6 +34,7 @@ public class Main {
                     break;
                 case 0:
                     System.out.println("Saindo...");
+                    break;
                 default:
                     System.out.println("Opção informada é inválida!");
                     break;
@@ -51,12 +52,10 @@ public class Main {
         int numero = -1;
         try{
             numero = Integer.parseInt(sc.nextLine());
-            if (numero<0) {
-                throw new ArithmeticException();
-            } 
-        } catch(ArithmeticException ex){
+        } catch(NumberFormatException ex){
             System.out.println("Valor informado é inválido!");
-            lerNumero(sc, "Digite novamente a opcao: ");
+            System.out.print(msg);
+            numero = Integer.parseInt(sc.nextLine());
         }
         return numero;
     }
