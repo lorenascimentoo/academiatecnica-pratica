@@ -86,3 +86,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP29** : Atividade em dupla, conceito de Herança e Composição
 >[REPOSITÓRIO DA DUPLA: @lorenascimentoo e @Meimoon1](https://github.com/Meimoon1/ATP29Dupla)
+
+- **ATP30** : Conceito de exceção e como tratá-las.
+>[\atividadep30](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep30)
