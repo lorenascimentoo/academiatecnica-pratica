@@ -16,18 +16,18 @@ public class Main {
             }
             switch (opc) {
                 case 1:
-                    System.out.printf("A soma dos numeros %d e %d é: %d",n1,n2, calc.somar(n1, n2));
+                    System.out.printf("A soma dos numeros %d e %d é: %d\n",n1,n2, calc.somar(n1, n2));
                     break;
                 case 2:
-                    System.out.printf("A subtracao dos numeros %d e %d é: %d",n1,n2, calc.subtrair(n1, n2));
+                    System.out.printf("A subtracao dos numeros %d e %d é: %d\n",n1,n2, calc.subtrair(n1, n2));
                     break;
                 case 3:
-                    System.out.printf("A multiplicacao dos numeros %d e %d é: %d",n1,n2, calc.multiplicar(n1, n2));
+                    System.out.printf("A multiplicacao dos numeros %d e %d é: %d\n",n1,n2, calc.multiplicar(n1, n2));
                     break;
                 case 4:
                     // implementacao do bloco try/cath para tratamento de excecoes
                     try{
-                        System.out.printf("A divisao dos numeros %d e %d é: %d",n1,n2, calc.dividir(n1, n2));
+                        System.out.printf("A divisao dos numeros %d e %d é: %d\n",n1,n2, calc.dividir(n1, n2));
                     } catch(ArithmeticException ex){
                         System.out.println("Não é possível realizar divisao por zero");
                     }
@@ -48,15 +48,18 @@ public class Main {
     }
 
     public static int lerNumero(Scanner sc, String msg){
-        System.out.print(msg);
-        int numero = -1;
-        try{
-            numero = Integer.parseInt(sc.nextLine());
-        } catch(NumberFormatException ex){
-            System.out.println("Valor informado é inválido!");
-            System.out.print(msg);
-            numero = Integer.parseInt(sc.nextLine());
-        }
+        int numero = 0;
+        boolean valido = false;
+        do{
+            try{
+                System.out.print(msg);
+                numero = Integer.parseInt(sc.nextLine());
+                valido = true;
+            } catch(NumberFormatException ex){
+                System.out.println("Valor informado é inválido!");
+            }
+        } while(!valido);
+        
         return numero;
     }
 
