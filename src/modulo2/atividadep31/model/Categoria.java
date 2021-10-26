@@ -7,11 +7,12 @@ public class Categoria extends Base{
     // composicao
     // uma categoria pode ter uma lista de produtos
     public ArrayList<Produto> produtos;
-    
+
     // metodo construtor da classe categoria
     public Categoria(String nome, String descricao){
         this.nome = nome;
         this.descricao = descricao;
+        this.produtos = new ArrayList<Produto>();
     }
     // sobrescrita do metodo para impressao dos dados
     @Override
