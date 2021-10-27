@@ -1,0 +1,81 @@
+body{
+    background: #917db8;
+}
+
+#principal{
+    background: #f2eef9;
+    width: 70%;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    padding: 2px 10px 2px 10px;
+    width: auto;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #504566;
+    color: #fff;
+}
+
+h3{
+    margin: 10px 0 0 10px;
+    padding: 0 0 0 30px;
+    font-size: 20px;
+}
+
+h4{
+    margin: 5px 0 0 5px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+}
+
+a:link, a:visited {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #554c66;
+}
+
+button{
+    margin: 10px 0px 5px 20px;
+    padding: 20px;
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: #d2bcfb;
+}
+#opcoes{
+    text-align: center;
+    margin: auto;
+}
+
+#cadastrar:hover{
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: #bdcda8;
+}
+
+#deletar:hover{
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: #e392a5;
+}
+
+#alterar:hover{
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: #b7acca;
+}
+
+#listar:hover{
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: #b5a6cf;
+}
