@@ -8,6 +8,11 @@ public class Categoria extends Base{
     // uma categoria pode ter uma lista de produtos
     public ArrayList<Produto> produtos;
 
+    // metodo construtor da classe categoria que permite a criacao de um objeto sem a obrigacao de passar os valores automaticamente
+    public Categoria(){
+        this.produtos = new ArrayList<Produto>();
+    }
+
     // metodo construtor da classe categoria
     public Categoria(String nome, String descricao){
         this.nome = nome;

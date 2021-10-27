@@ -5,6 +5,9 @@ public class Produto extends Base{
     // composicao
     // o produto deve ter uma categoria
     public Categoria categoria;
+    // metodo construtor da classe produto que permite a criacao de um objeto sem a obrigacao de passar os valores automaticamente
+    public Produto(){
+    }
     // metodo construtor da classe produto
     public Produto(String nome, double valor, Categoria cat){
         this.nome = nome;
