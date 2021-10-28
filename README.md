@@ -89,3 +89,15 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP30** : Conceito de exceção e como tratá-las.
 >[\atividadep30](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep30)
+
+- **ATP31** : Conceito de exceção e como tratá-las, utilizando arquitetura MVC.
+>[\atividadep31](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep31)
+
+- **ATP32** : Os primeiros conceitos de web com HTML.
+>[\atividadep32](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep31)
+
+- **ATP33** : Os primeiros conceitos de web com CSS.
+>[\atividadep32\css](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep32/css)
+
+- **ATP34** : Os primeiros conceitos de web com JS.
+>[\atividadep32\js](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep32/js)
