@@ -1,24 +1,19 @@
 <html>
     <head>
         <title>Exclusao de Viagem</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" href="css/deletar.css">
+        <script src="js/deletar.js"></script>
     </head>
     <body>
         <div id="principal">
             <h1>Deletar Viagem</h1>
-            <p>Preencha as informações da viagem a ser deletada:</p>
+            <p>Informe o identificador da viagem a ser deletada:</p>
             <form action="">
-                <label class="labels" for="cidade">Cidade</label>
-                <input type="text"><br>
-                <label class="labels" for="estado">Estado</label>
-                <input type="text"><br>
-                <label class="labels" for="valor">Valor</label>
-                <input type="text"><br>
-                <label class="labels" for="">Data de Ida</label>
-                <input type="date"><br>
-                <label class="labels" for="">Data de Retorno</label>
-                <input type="date"><br>
-                <input type="submit" value="Deletar">
+                <label class="labels" for="id">ID</label>
+                <input type="text" id="id"><br>
+                
+                <input type="submit" value="Deletar" onclick="excluir(event)">
             </form>
             <div id="btn-voltar">
                 <button><a href="index.html">Voltar</a></button>
