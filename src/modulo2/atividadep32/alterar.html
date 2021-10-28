@@ -2,23 +2,26 @@
     <head>
         <title>Alteracao de Viagens</title>
         <link rel="stylesheet" href="css/alterar.css">
+        <script src="js/alterar.js"></script>
     </head>
     <body>
         <div id="principal">
             <h1>Alterar Viagem</h1>
             <p>Preencha as informações da viagem a ser alteradas:</p>
             <form action="">
+                <label class="labels" for="id">ID</label>
+                <input type="text" id="id"><br>
                 <label class="labels" for="cidade">Cidade</label>
-                <input type="text"><br>
+                <input type="text"id="cidade"><br>
                 <label class="labels" for="estado">Estado</label>
-                <input type="text"><br>
+                <input type="text"id="estado"><br>
                 <label class="labels"for="valor">Valor</label>
-                <input type="text"><br>
-                <label class="labels"for="">Data de Ida</label>
-                <input type="date"><br>
-                <label class="labels"for="">Data de Retorno</label>
-                <input type="date"><br>
-                <input type="submit" value="Alterar">
+                <input type="text"id="valor"><br>
+                <label class="labels"for="data-ida">Data de Ida</label>
+                <input type="date"id="data_ida"><br>
+                <label class="labels"for="data-retorno">Data de Retorno</label>
+                <input type="date"id="data_retorno"><br>
+                <input type="submit" value="Alterar" onclick="alterar(event)">
             </form>
             <div id="btn-voltar">
                 <button><a href="index.html">Voltar</a></button>
