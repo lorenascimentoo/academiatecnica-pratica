@@ -2,23 +2,24 @@
   <head>
     <title>Cadastro de Viagens</title>
     <link rel="stylesheet" href="css/cadastrar.css" />
+    <script src="js/cadastrar.js"></script>
   </head>
   <body>
     <div id="principal">
       <h1>Cadastrar Viagem</h1>
       <p>Preencha as informações da viagem:</p>
       <form action="">
-        <label class="labels" for="cidade">Cidade</label>
-        <input type="text" /><br />
-        <label class="labels" for="estado">Estado</label>
-        <input type="text" /><br />
-        <label class="labels" for="valor">Valor</label>
-        <input type="text" /><br />
-        <label class="labels" for="">Data de Ida</label>
-        <input type="date" /><br />
-        <label class="labels" for="">Data de Retorno</label>
-        <input type="date" /><br />
-        <input class="submit" type="submit" value="Cadastrar" />
+        <label class="labels">Cidade</label>
+        <input type="text" id="cidade"/><br />
+        <label class="labels" >Estado</label>
+        <input type="text" id="estado"/><br />
+        <label class="labels">Valor</label>
+        <input type="text" id="valor"/><br />
+        <label class="labels">Data de Ida</label>
+        <input type="date" id="data_ida"/><br />
+        <label class="labels">Data de Retorno</label>
+        <input type="date" id="data_retorno"/><br />
+        <input class="submit" type="submit" value="Cadastrar" onclick="cadastrar(event)"/>
       </form>
       <div id="btn-voltar">
         <button><a href="index.html">Voltar</a></button>
