@@ -1,0 +1,3 @@
+teste de leitura de arquivo
+linha 2
+mais uma linha
