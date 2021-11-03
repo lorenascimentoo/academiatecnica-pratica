@@ -1,0 +1,2 @@
+A
+Teste de metodos para uso do BufferedWriter!
