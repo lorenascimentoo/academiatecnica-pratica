@@ -20,5 +20,9 @@ public class Main {
         e2.cnpj="22222222222";
         e2.ramo_atividade="RESTAURANTE";
         ec.salvar(e2);
+
+       for (Empresa e : ec.listar()) {
+           System.out.println(e);
+       }
     }
 }
