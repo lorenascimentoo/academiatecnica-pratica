@@ -13,7 +13,7 @@ public class ControllerFile implements Controller<PontoTuristico>{
     private String filename;
 
     public ControllerFile(){
-        this.filename = "dados/arquivo.txt";
+        this.filename = "P2/dados/arquivo.txt";
     }
 
     @Override
