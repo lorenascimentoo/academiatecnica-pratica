@@ -101,3 +101,15 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP34** : Os primeiros conceitos de web com JS.
 >[\atividadep32\js](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep32/js)
+
+- **ATP35** :  Os conceitos aprendidos sobre Html, Css e JavaScript.
+>[\atividadep35](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep35/)
+
+- **ATP37** :  Revisão conteúdo de java.
+>[\atp](https://github.com/lorenascimentoo/atp)
+
+- **ATP38** :  Biblioteca java.io.
+>[\atividadep38](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep38/)
+
+- **ATP40** :  Padrão de projetos DAO(Data Access Object) e com Interfaces em Java.
+>[\atividadep40](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep40/)
