@@ -7,27 +7,30 @@
     <script src="js/index.js"></script>
 </head>
 
-<body>
+<body onload="inicio()">
     <header>
         <div class="content">
-            <h1 onclick="inicializa(event)" class="titulo-principal">SISTEMA DE USUÁRIOS</h1>
+            <h1 class="titulo-principal">SISTEMA DE USUÁRIOS</h1>
             <nav>
                 <ul class="navegacao">
-                    <li>Cadastrar</li>
-                    <li>Listar</li>
-                    <li>Alterar</li>
-                    <li>Deletar</li>
+                    <li onclick="cadastrar()">Cadastrar</li>
+                    <li onclick="listar()">Listar</li>
+                    <li onclick="alterar()">Alterar</li>
+                    <li onclick="deletar()">Deletar</li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <iframe id="frame"></iframe>
+        <div>
+            <iframe class="iframe" id="frame"></iframe>
+        </div>
     </main>
     <footer>
-        <h3 class="rodape">Criado e desenvolvido por: <em><strong>iamlorxn</strong></em></h3>
+        <div class="rodape">
+            <h3 onclick="inicializa(event)">Criado e desenvolvido por: <em><strong>iamlorxn</strong></em></h3>
+        </div>
     </footer>
-
 
 </body>
 
