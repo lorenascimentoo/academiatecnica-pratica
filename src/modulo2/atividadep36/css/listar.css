@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Lora',serif;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+.centralizar h2{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table{
+    width: 80%;
+    border: 2px solid #6b5f80;
+    margin: auto;
+    padding: 0 5px;
+}
+
+table thead{
+    background-color: #9f7fdb;
+    text-transform: uppercase;
+    height: 25px;
+}
+
+table tbody tr {
+    text-align: center;
+    text-transform: uppercase;
+}
