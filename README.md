@@ -113,3 +113,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP40** :  Padrão de projetos DAO(Data Access Object) e com Interfaces em Java.
 >[\atividadep40](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep40/)
+
+- **ATP41** :  Banco de dados e sua estrutura com DDL.
+>[\atividadep41](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep41/)
+
+- **ATP42** :  Banco de dados e a manipulação de dados através de DML.
+>[\atividadep42](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep42/)
