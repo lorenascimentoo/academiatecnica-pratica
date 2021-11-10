@@ -105,6 +105,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 - **ATP35** :  Os conceitos aprendidos sobre Html, Css e JavaScript.
 >[\atividadep35](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep35/)
 
+- **ATP36** :  Os conceitos aprendidos sobre Html, Css e JavaScript.
+>[\atividadep36](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep36/)
+
 - **ATP37** :  Revisão conteúdo de java.
 >[\atp](https://github.com/lorenascimentoo/atp)
 
