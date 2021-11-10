@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Lora',serif;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+.centralizar h2{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form{
+    border-style: double;
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px 0 20px 40px;
+    border-color: #6b5f80 ;
+    border-radius: 10px;
+    text-align: left;
+}
+
+label{
+    margin: auto;
+}
+
+.labels{
+    width: 15%;
+    text-align: left;
+    display: inline-block;
+}
+
+input{
+    margin: 0 5px 10px 0;
+    font-size: 16px;
+    line-height: 15px;
+    width: 75%;
+    text-align: right;
+    padding: 3px;
+}
+input[type="submit"]{
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: 1px ridge #b19cd9;
+    margin: 20px 0 0 20%; 
+}
+
+input[type="submit"]:hover{
+    background-color:#b19cd9;
+    border-style:none;
+}
