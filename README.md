@@ -134,3 +134,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP45** :  Os conceitos aprendidos sobre Banco de dados.
 >[\atividadep45](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep45/)
+
+- **ATP46** :  Banco de dados em Java através da biblioteca JDBC.
+>[\atividadep46](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep46/)
