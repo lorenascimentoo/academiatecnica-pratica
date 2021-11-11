@@ -122,3 +122,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP42** :  Banco de dados e a manipulação de dados através de DML.
 >[\atividadep42](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep42/)
+
+- **ATP43** :  Banco de dados e a consulta de dados através de DQL.
+>[\atividadep43](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep43/)
