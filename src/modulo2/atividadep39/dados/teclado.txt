@@ -1,0 +1,7 @@
+hello
+teste
+de
+escrita
+entrada
+pelo
+terminal
