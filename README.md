@@ -125,3 +125,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP43** :  Banco de dados e a consulta de dados através de DQL.
 >[\atividadep43](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep43/)
+
+- **ATP44** :  Banco de dados e o controle de transação através de DTL.
+>[\atividadep44](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep44/)
