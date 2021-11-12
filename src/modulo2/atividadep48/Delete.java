@@ -1,6 +1,6 @@
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class Delete {
     public static void main(String[] args) {
@@ -8,11 +8,13 @@ public class Delete {
 
         try {
             Connection conn = conecta.start("postgres", "aula2021");
-
-            Statement statement = conn.createStatement();
+            int id1 = 17;
             
-            String sql = "DELETE FROM CATEGORIA WHERE ID>19;";
-            statement.execute(sql);
+            String sql = "DELETE FROM CATEGORIA WHERE ID=?";
+            
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setInt(1,id1);
+            statement.execute();;
 
             int qntAlterada = statement.getUpdateCount();
 
