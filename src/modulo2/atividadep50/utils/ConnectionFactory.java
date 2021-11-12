@@ -20,12 +20,7 @@ public class ConnectionFactory {
 
     public ConnectionFactory(){
         //informacoes da conexao
-        this.driverType="jdbc";
-        this.driverName="postgresql";
-        this.host="localhost";
-        this.port=5432;
-        this.database="postgres";
-        String connecString = String.format("%s:%s://%s:%d/%s", this.driverType,this.driverName,this.host,this.port,this.database);
+        String connecString = this.getUrl();
         this.user = "postgres";
         this.pwd = "aula2021";
 
@@ -43,5 +38,15 @@ public class ConnectionFactory {
     public Connection getConnection() throws SQLException{
         return this.dataSource.getConnection();
     }
-    
+    //gera a url para a conexao   
+    private String getUrl(){
+        //informacoes da url
+        this.driverType="jdbc";
+        this.driverName="postgresql";
+        this.host="localhost";
+        this.port=5432;
+        this.database="postgres";
+        // retorna a string que compoe a url
+        return String.format("%s:%s://%s:%d/%s", this.driverType,this.driverName,this.host,this.port,this.database);
+    }
 }
