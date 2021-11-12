@@ -1,7 +1,7 @@
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class Read {
     public static void main(String[] args) {
@@ -10,11 +10,10 @@ public class Read {
         try {
             Connection conn = conecta.start("postgres", "aula2021");
 
-                        
-            Statement statement = conn.createStatement();
-            
             String sql = "SELECT ID, NOME FROM CATEGORIA;";
-            statement.execute(sql);
+
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.execute();
 
             ResultSet retorno = statement.getResultSet();
 
