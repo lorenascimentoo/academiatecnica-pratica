@@ -140,3 +140,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP47** :  Banco de dados em Java através da biblioteca JDBC.
 >[\atividadep47](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep47/)
+
+- **ATP48** :  Utilização do preparedStatement para prevenir de ataques de injeção de SQL.
+>[\atividadep48](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep48/)
