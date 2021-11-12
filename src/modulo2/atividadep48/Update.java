@@ -1,6 +1,6 @@
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class Update {
     public static void main(String[] args) {
@@ -8,11 +8,15 @@ public class Update {
 
         try {
             Connection conn = conecta.start("postgres", "aula2021");
-
-            Statement statement = conn.createStatement();
             
-            String sql = "UPDATE CATEGORIA SET NOME='INFORMATICA' WHERE ID=1 OR ID=3";
-            statement.execute(sql);
+            String nome = "altera categoria";
+            int id = 19;
+            String sql = "UPDATE CATEGORIA SET NOME=? WHERE ID=?";
+
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1,nome);
+            statement.setInt(2, id);
+            statement.execute();
             int qntAlterada = statement.getUpdateCount();
 
             System.out.printf("%d categorias atualizadas!\n",qntAlterada);
