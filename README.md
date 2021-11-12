@@ -143,3 +143,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP48** :  Utilização do preparedStatement para prevenir de ataques de injeção de SQL.
 >[\atividadep48](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep48/)
+
+- **ATP49** :  Padrão de projeto Factory  e o Try with resource para um controle de abertura e fechamento de conexões.
+>[\atividadep49](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep49/)
+
+- **ATP50** :  Conceito de pool de conexões.
+>[\atividadep50](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep50/)
