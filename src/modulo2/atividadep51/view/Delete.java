@@ -1,7 +1,9 @@
+package view;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import dao.CategoriaDAO;
 import utils.ConnectionFactory;
 
 public class Delete {
@@ -9,20 +11,9 @@ public class Delete {
 
         try (Connection conn = new ConnectionFactory().getConnection())
         {
-            int id1 = 26;
-            
-            String sql = "DELETE FROM CATEGORIA WHERE ID=?";
-            try {
-                PreparedStatement statement = conn.prepareStatement(sql);
-                statement.setInt(1,id1);
-                statement.execute();;
-    
-                int qntAlterada = statement.getUpdateCount();
-    
-                System.out.printf("%d categorias excluídas!\n",qntAlterada);    
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            CategoriaDAO dao = new CategoriaDAO(conn);
+
+            dao.delete(19);          
             
         } catch (SQLException e) {
             
