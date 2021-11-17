@@ -1,7 +1,7 @@
 # Academia Técnica - Prática
 Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Capgemini.
 
-## MODULO 002 
+##  
 - **ATP1** : Introdução ao JAVA.
 >[\atividadep1](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep1)
 
@@ -149,3 +149,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP50** :  Conceito de pool de conexões.
 >[\atividadep50](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep50/)
+
+- **ATP51** :  Conceito da camada DAO com JDBC.
+>[\atividadep51](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep51/)
