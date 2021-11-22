@@ -152,3 +152,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP51** :  Conceito da camada DAO com JDBC.
 >[\atividadep51](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep51/)
+
+- **ATP52** :  Utilizacao do Maven e o Eclipse.
+>[\atividadep52](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep52/)
+
+- **ATP53** :  JAVA WEB.
+>[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
