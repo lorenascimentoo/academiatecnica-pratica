@@ -1,4 +1,4 @@
-package view;
+package com.atp.atp53.view;
 
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -12,8 +12,8 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import dao.CategoriaDao;
-import model.Categoria;
+import com.atp.atp53.dao.CategoriaDao;
+import com.atp.atp53.model.Categoria;
 
 public class CategoriaDesktopView extends JFrame{
 	private CategoriaDao dao;

@@ -1,4 +1,4 @@
-package dao;
+package com.atp.atp53.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import model.Categoria;
+import com.atp.atp53.model.Categoria;
 
 public class CategoriaDao {
 	public int create(Categoria model) {

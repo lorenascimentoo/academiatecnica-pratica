@@ -1,6 +1,7 @@
+package com.atp.atp53;
 import javax.swing.JFrame;
 
-import view.CategoriaDesktopView;
+import com.atp.atp53.view.CategoriaDesktopView;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package servlet;
+package com.atp.atp53.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = "/produto")
-public class Produto extends HttpServlet{
+public class ProdutoServlet extends HttpServlet{
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String nome = req.getParameter("nome");

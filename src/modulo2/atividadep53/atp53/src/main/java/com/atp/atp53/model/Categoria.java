@@ -1,4 +1,4 @@
-package model;
+package com.atp.atp53.model;
 
 public class Categoria {
     private int id;
