@@ -14,15 +14,21 @@ public class Produto extends HttpServlet{
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String nome = req.getParameter("nome");
         String parametroIdCat = req.getParameter("id_categoria");
+        String parametroValor = req.getParameter("valor");
 
         PrintWriter out = resp.getWriter();
         out.println("Modulo Produto");
-
-        if (parametroIdCat != null ) {
+        out.printf("== PRODUTO: %s\n",nome);
+        if (parametroIdCat != null && parametroValor != null) {
             int id_categoria = Integer.parseInt(parametroIdCat);
-            out.printf("== PRODUTO: %s \n== ID_CATEGORIA: %d",nome,id_categoria);
-        } else{
-            out.printf("== PRODUTO: %s",nome);
+            Float valor = Float.parseFloat(parametroValor);
+            out.printf("==VALOR: %.2f\n== ID_CATEGORIA: %d",valor,id_categoria);
+        } else if(parametroIdCat != null){
+            int id_categoria = Integer.parseInt(parametroIdCat);
+            out.printf("== ID_CATEGORIA: %d",id_categoria);
+        } else if(parametroValor != null){
+            Float valor = Float.parseFloat(parametroValor);
+            out.printf("== VALOR: %.2f",valor);
         }
         
     }
