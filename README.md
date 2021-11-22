@@ -158,3 +158,6 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP53** :  JAVA WEB.
 >[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
+
+- **ATP54** :  JAVA WEB e parâmetros em requisições.
+>[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
