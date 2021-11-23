@@ -2,6 +2,7 @@ package com.atp.atp53.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import com.atp.atp53.dao.CategoriaDao;
 import com.atp.atp53.model.Categoria;
 
 import jakarta.servlet.ServletException;
@@ -13,13 +14,20 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/categoria")
 public class CategoriaServlet extends HttpServlet{
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Categoria cat = new Categoria();
-        cat.setNome(req.getParameter("nome"));
-        cat.setDescricao(req.getParameter("descricao"));
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // pega os valores enviados na requisicao
+        // atribui os valores ao objeto categoria 
+        Categoria model = new Categoria();
+        model.setNome(req.getParameter("nome"));
+        model.setDescricao(req.getParameter("descricao"));
 
+        // instancia um objeto dao para operacaoes no BD
+        CategoriaDao dao = new CategoriaDao();
+        // o metodo create retorna o id gerado, que é atribuido ao objeto categoria
+        model.setId(dao.create(model));
+
+        //Para enviar a resposta da requisicao de inserção
         PrintWriter out = resp.getWriter();
-        out.println("Modulo Categoria");
-        out.printf("== NOME: %s\n== DESCRICAO: %s",cat.getNome(),cat.getDescricao());
+        out.printf("CATEGORIA CADASTRADA COM SUCESSO!!\n == ID %d GERADO!",model.getId());
     }
 }
