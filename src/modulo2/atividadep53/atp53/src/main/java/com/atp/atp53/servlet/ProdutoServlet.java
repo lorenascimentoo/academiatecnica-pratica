@@ -24,14 +24,14 @@ public class ProdutoServlet extends HttpServlet{
         out.printf("== PRODUTO: %s\n",prod.getNome());
         if (parametroIdCat != null && parametroValor != null) {
              prod.setId_categoria(Integer.parseInt(parametroIdCat));
-             prod.setValor(Float.parseFloat(parametroValor));
-            out.printf("==VALOR: %.2f\n== ID_CATEGORIA: %d",prod.getValor(),prod.getId_categoria());
+             prod.setPreco(Float.parseFloat(parametroValor));
+            out.printf("==VALOR: %.2f\n== ID_CATEGORIA: %d",prod.getPreco(),prod.getId_categoria());
         } else if(parametroIdCat != null){
             prod.setId_categoria(Integer.parseInt(parametroIdCat));
             out.printf("== ID_CATEGORIA: %d",prod.getId_categoria());
         } else if(parametroValor != null){
-            prod.setValor(Float.parseFloat(parametroValor));
-            out.printf("== VALOR: %.2f",prod.getValor());
+            prod.setPreco(Float.parseFloat(parametroValor));
+            out.printf("== VALOR: %.2f",prod.getPreco());
         }
     }
 }
