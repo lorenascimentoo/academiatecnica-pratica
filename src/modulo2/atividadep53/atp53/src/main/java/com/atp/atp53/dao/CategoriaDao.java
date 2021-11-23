@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 import com.atp.atp53.model.Categoria;
 
+
 public class CategoriaDao {
 	public int create(Categoria model) {
 		int idGerado = 0;
@@ -46,8 +47,10 @@ public class CategoriaDao {
 				ResultSet retorno = statement.getResultSet();
 
 				while (retorno.next()) {
-					Categoria cat = new Categoria(retorno.getInt("id"), retorno.getString("nome"),
-							retorno.getString("descricao"));
+					Categoria cat = new Categoria();
+					cat.setId(retorno.getInt("id"));
+					cat.setNome(retorno.getString("nome"));
+					cat.setDescricao(retorno.getString("descricao"));
 					lista.add(cat);
 				}
 			} catch (Exception e) {
