@@ -46,13 +46,28 @@ public class CategoriaDao {
 				statement.execute();
 				ResultSet retorno = statement.getResultSet();
 
-				while (retorno.next()) {
-					Categoria cat = new Categoria();
-					cat.setId(retorno.getInt("id"));
-					cat.setNome(retorno.getString("nome"));
-					cat.setDescricao(retorno.getString("descricao"));
-					lista.add(cat);
-				}
+				lista = createList(retorno);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return lista;
+	}
+
+	public ArrayList<Categoria> read(String nome) {
+		ArrayList<Categoria> lista = new ArrayList<Categoria>();
+		try (Connection conn = new ConnectionFactory().getConnection()) {
+
+			String sql = "SELECT * FROM CATEGORIA WHERE nome = ?;";
+			try {
+				PreparedStatement statement = conn.prepareStatement(sql);
+				statement.setString(1, nome);
+				statement.execute();
+				ResultSet retorno = statement.getResultSet();
+
+				lista = createList(retorno);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -100,5 +115,18 @@ public class CategoriaDao {
 			e.printStackTrace();
 		}
 		return qntAlterada;
+	}
+
+	private ArrayList<Categoria> createList(ResultSet retorno) throws SQLException {
+		ArrayList<Categoria> list = new ArrayList<Categoria>();
+
+		while (retorno.next()) {
+			Categoria cat = new Categoria();
+			cat.setId(retorno.getInt("id"));
+			cat.setNome(retorno.getString("nome"));
+			cat.setDescricao(retorno.getString("descricao"));
+			list.add(cat);
+		}
+		return list;
 	}
 }
