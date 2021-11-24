@@ -29,9 +29,9 @@
         <tbody>
             <%for (Categoria model : categorias) {%>
                 <tr>
-                    <th><%=model.getId()%></th>
-                    <th><%=model.getNome()%></th>
-                    <th><%=model.getDescricao()%></th>
+                    <td><%=model.getId()%></td>
+                    <td><%=model.getNome()%></td>
+                    <td><%=model.getDescricao()%></td>
                 </tr>
             <%}%>
         </tbody>
