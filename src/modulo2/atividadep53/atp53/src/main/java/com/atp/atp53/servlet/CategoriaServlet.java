@@ -1,10 +1,10 @@
 package com.atp.atp53.servlet;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import com.atp.atp53.dao.CategoriaDao;
 import com.atp.atp53.model.Categoria;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -26,8 +26,13 @@ public class CategoriaServlet extends HttpServlet{
         // o metodo create retorna o id gerado, que é atribuido ao objeto categoria
         model.setId(dao.create(model));
 
-        //Para enviar a resposta da requisicao de inserção
-        PrintWriter out = resp.getWriter();
-        out.printf("CATEGORIA CADASTRADA COM SUCESSO!!\n == ID %d GERADO!",model.getId());
+        // aqui informa o nome e atributo a ser acessado na pagina
+        req.setAttribute("id", model.getId());
+
+        // faz a rota a ser adicionada no servlet
+        RequestDispatcher rq = req.getRequestDispatcher("categoria-sucesso.jsp");
+        // passa a requisicao e o resposta para que a rota funcione
+        rq.forward(req, resp);
+        
     }
 }
