@@ -40,7 +40,7 @@ public class CategoriaDao {
 		ArrayList<Categoria> lista = new ArrayList<Categoria>();
 		try (Connection conn = new ConnectionFactory().getConnection()) {
 
-			String sql = "SELECT * FROM CATEGORIA;";
+			String sql = "SELECT * FROM CATEGORIA ORDER BY ID;";
 			try {
 				PreparedStatement statement = conn.prepareStatement(sql);
 				statement.execute();
@@ -60,7 +60,7 @@ public class CategoriaDao {
 		ArrayList<Categoria> lista = new ArrayList<Categoria>();
 		try (Connection conn = new ConnectionFactory().getConnection()) {
 
-			String sql = "SELECT * FROM CATEGORIA WHERE nome = ?;";
+			String sql = "SELECT * FROM CATEGORIA WHERE nome = ? ORDER BY ID;";
 			try {
 				PreparedStatement statement = conn.prepareStatement(sql);
 				statement.setString(1, nome);
@@ -75,6 +75,33 @@ public class CategoriaDao {
 			e.printStackTrace();
 		}
 		return lista;
+	}
+	public Categoria readById(int id){
+		Categoria model = new Categoria();
+		try (Connection conn = new ConnectionFactory().getConnection()) {
+
+			String sql = "SELECT * FROM CATEGORIA WHERE id = ?;";
+			try {
+				PreparedStatement statement = conn.prepareStatement(sql);
+				statement.setInt(1, id);
+				statement.execute();
+				ResultSet retorno = statement.getResultSet();
+
+				while (retorno.next()) {
+					model.setId(retorno.getInt("id"));
+					model.setNome(retorno.getString("nome"));
+					model.setDescricao(retorno.getString("descricao"));
+					// só faz o processamento uma vez e quebra o laço
+					break;
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return model;
 	}
 
 	public int update(Categoria model) {
@@ -98,14 +125,14 @@ public class CategoriaDao {
 		return qntAlterada;
 	}
 
-	public int delete(int id) {
+	public int delete(Categoria model) {
 		int qntAlterada = 0;
 		try (Connection conn = new ConnectionFactory().getConnection()) {
 			String sql = "DELETE FROM CATEGORIA WHERE ID=?";
 
 			try {
 				PreparedStatement statement = conn.prepareStatement(sql);
-				statement.setInt(1, id);
+				statement.setInt(1, model.getId());
 				statement.execute();
 				qntAlterada = statement.getUpdateCount();
 			} catch (Exception e) {
