@@ -1,0 +1,10 @@
+com\atp\atp53\model\Categoria.class
+com\atp\atp53\servlet\CategoriaBuscarIdServlet.class
+com\atp\atp53\servlet\CategoriaDeleteServlet.class
+com\atp\atp53\model\Produto.class
+com\atp\atp53\servlet\CategoriaUpdateServlet.class
+com\atp\atp53\servlet\ProdutoServlet.class
+com\atp\atp53\servlet\CategoriaServlet.class
+com\atp\atp53\dao\CategoriaDao.class
+com\atp\atp53\servlet\CategoriaReadServlet.class
+com\atp\atp53\dao\ConnectionFactory.class
