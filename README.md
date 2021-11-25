@@ -164,3 +164,15 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP55** :  JAVA WEB, parâmetros em requisições e formulários HTML.
 >[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
+
+- **ATP56** :  JAVA WEB, parâmetros em requisições POST e camada DAO.
+>[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
+
+- **ATP57** :  JAVA WEB, utilizando JSP com scriptlet.
+>[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
+
+- **ATP58** :  JAVA WEB, utilizando JSP com scriptlet.
+>[\atividadep53](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep53/)
+
+- **ATP59** :  JAVA PERSISTENCE API, utilizando o hibernate.
+>[\atividadep59](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep59/)
