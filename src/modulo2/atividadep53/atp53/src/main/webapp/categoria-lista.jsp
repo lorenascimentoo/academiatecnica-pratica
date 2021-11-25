@@ -5,7 +5,7 @@
 %>
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@
                     <td><%=model.getNome()%></td>
                     <td><%=model.getDescricao()%></td>
                     <td>
-                        <a href="">Alterar</a>
+                        <a href="/atp53-1/categoria/carregar?id=<%=model.getId()%>">Alterar</a>
                         <a href="/atp53-1/categoria/deletar?id=<%=model.getId()%>">Excluir</a>
                     </td>
                 </tr>
