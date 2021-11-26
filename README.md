@@ -176,3 +176,9 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP59** :  JAVA PERSISTENCE API, utilizando o hibernate.
 >[\atividadep59](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep59/)
+
+- **ATP60** :  JAVA PERSISTENCE API, utilizando o hibernate com DAO.
+>[\atividadep59](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep59/)
+
+- **ATP61** :  JAVA PERSISTENCE API, utilizando o hibernate com Factory.
+>[\atividadep59](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep59/)
