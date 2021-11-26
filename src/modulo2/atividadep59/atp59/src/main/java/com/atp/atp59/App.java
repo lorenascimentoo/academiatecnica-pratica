@@ -20,6 +20,15 @@ public class App
         //fazendo uma insercao no BD
         dao.create(model);
         
+        Categoria model2 = new Categoria();
+        model2.setId(42);
+        model2.setNome("Teste2 JPA com CategoriaDao - UPDATE");
+        //fazendo uma atualizacao no BD
+        dao.update(model2);
+
+        //fazendo uma delecao no BD
+        dao.delete(43);
+
         // faz a busca e atribui uma lista do tipo categoria
         List<Categoria> lista = dao.read();
 
