@@ -4,15 +4,15 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import com.atp.atp59.model.Categoria;
+import com.atp.atp59.model.Conta;
 
-public class CategoriaDao {
+public class ContaDao {
     EntityManager em;
-    public CategoriaDao() {
+    public ContaDao() {
         this.em = new ConnectionFactory().getConnection();
     }
 
-    public int create(Categoria model){
+    public int create(Conta model){
         //inicia a transacao
         this.em.getTransaction().begin();
         // faz a persistencia (o insert)
@@ -23,12 +23,12 @@ public class CategoriaDao {
         return model.getId();
     }
 
-    public List<Categoria> read(){
-        // faz a busca e atribui uma lista do tipo categoria
-        return this.em.createQuery("SELECT c FROM Categoria c", Categoria.class).getResultList();
+    public List<Conta> read(){
+        // faz a busca e atribui uma lista do tipo Conta
+        return this.em.createQuery("SELECT c FROM Conta c", Conta.class).getResultList();
     }
 
-    public void update(Categoria model){
+    public void update(Conta model){
         //inicia a transacao
         this.em.getTransaction().begin();
         // faz a atualizacao no bd
@@ -39,7 +39,7 @@ public class CategoriaDao {
 
     public void delete(int id){
         //antes de realizar a delecao, precisa pegar a entidade no BD
-        Categoria model = em.find(Categoria.class, id);
+        Conta model = em.find(Conta.class, id);
         //inicia a transacao
         this.em.getTransaction().begin();
         // faz a remocao no bd
