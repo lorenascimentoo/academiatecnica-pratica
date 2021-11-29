@@ -8,10 +8,13 @@
 </head>
 <body>
     <h5>Insira os dados do cliente:</h5>
-    <form action="/filme/salvar/" method="post">
-        NOME: <input type="text" name="nome" id="nome"><br/>
-        CPF: <input type="text" name="cpf" id="cpf"><br/>
+    <form action="/cliente/salvar/" method="post">
+        <input type="hidden" name="id" id="id" th:value="${cliente.id}">
+        NOME: <input type="text" name="nome" id="nome" th:value="${cliente.nome}"><br/>
+        CPF: <input type="text" name="cpf" id="cpf" th:value="${cliente.cpf}"><br/>
         <input type="submit" value="Salvar">
     </form>
+
+    <a href="/cliente">Listar clientes</a>
 </body>
 </html>
