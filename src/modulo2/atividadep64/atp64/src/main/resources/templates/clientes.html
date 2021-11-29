@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sistema de Clientes - Spring</title>
-    </head>
+<html lang="pt-br">
+    <head th:replace="~{base :: head('Sistema de Clientes - Spring')}"></head>
 
     <body>
-        <h1>Sistema de Clientes</h1>
+        <header th:replace="~{base::cabecalho}"></header>
+        <main>
+            <h1>Sistema de Clientes</h1>
+            <h4>Lista de Clientes</h4>
+            <table class="conteudo-principal table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NOME</th>
+                        <th scope="col">CPF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="c: ${clientes}">
+                        <td scope="row" th:text="${c.id}"></td>
+                        <td th:text="${c.nome}"></td>
+                        <td th:text="${c.cpf}"></td>
+                        <td>
+                            <a class="btn btn-warning" th:href="@{'/cliente/editar/'+${c.id}}">Editar</a>
+                            <a class="btn btn-danger" th:href="@{'/cliente/deletar/'+${c.id}}">Deletar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
 
-        <h4>Lista de Clientes</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>NOME</th>
-                    <th>CPF</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="c: ${clientes}">
-                    <td th:text="${c.id}"></td>
-                    <td th:text="${c.nome}"></td>
-                    <td th:text="${c.cpf}"></td>
-                    <td>
-                        <a th:href="@{'/cliente/editar/'+${c.id}}">Editar</a>
-                        <a th:href="@{'/cliente/deletar/'+${c.id}}">Deletar</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <a href="/cliente/cadastrar">Cadastrar Cliente</a>
     </body>
 </html>

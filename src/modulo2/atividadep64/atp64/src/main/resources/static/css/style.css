@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+body{
+    background-color: #f2eef9;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul,nav ul:hover{
+    color: #fff;
+}
+.pagina-principal{
+    text-align: center;
+    font-size: 25px;;
+}
+
+.conteudo-principal{
+    background: #f2eef9;
+    width: 50%;
+    margin: 0px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.formulario{
+    width: 50%;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.formulario-btn{
+    width: 40%;
+    margin-left: 290px;
+    padding: 10px;
+}

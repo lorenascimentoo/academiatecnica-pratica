@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario - Cliente</title>
-</head>
-<body>
-    <h5>Insira os dados do cliente:</h5>
-    <form action="/cliente/salvar/" method="post">
-        <input type="hidden" name="id" id="id" th:value="${cliente.id}">
-        NOME: <input type="text" name="nome" id="nome" th:value="${cliente.nome}"><br/>
-        CPF: <input type="text" name="cpf" id="cpf" th:value="${cliente.cpf}"><br/>
-        <input type="submit" value="Salvar">
-    </form>
+<html lang="pt-br">
+    <head th:replace="~{base :: head('Formulario - Cliente')}"></head>
 
-    <a href="/cliente">Listar clientes</a>
-</body>
+    <body>
+        <header th:replace="~{base::cabecalho}"></header>
+        <main>
+            <h1>Formulário de Clientes</h1>
+            <h4>Insira os dados do cliente:</h4>
+            <form action="/cliente/salvar/" method="post" class="formulario">
+                <input type="hidden" name="id" id="id" th:value="${cliente.id}">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">NOME:</label>
+                    <input type="text" class="form-control" name="nome" id="nome" th:value="${cliente.nome}">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">CPF:</label>
+                    <input type="text" class="form-control" name="cpf" id="cpf" th:value="${cliente.cpf}">
+                </div>
+                <input class="btn btn-success formulario-btn" type="submit" value="Salvar">
+            </form>
+        </main>
+        
+    </body>
 </html>
