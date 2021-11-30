@@ -30,7 +30,10 @@ public class ClienteRest {
     }
 
     @GetMapping("/api/cliente")
-    public List<Cliente> read(){
+    public List<Cliente> read(String nome){
+        if (nome != null) {
+            return (List<Cliente>)cRepository.findByNome(nome);
+        }
         return (List<Cliente>)cRepository.findAll();
     }
 
