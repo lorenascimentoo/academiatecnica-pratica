@@ -182,3 +182,29 @@ Códigos fonte desenvolvidos nas atividades práticas da academia técnica da Ca
 
 - **ATP61** :  JAVA PERSISTENCE API, utilizando o hibernate com Factory.
 >[\atividadep59](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep59/)
+
+- **ATP62** :  Framework Spring, utilizando sua camada de persistencia - Spring DATA.
+>[\atividadep62](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep62/)
+
+- **ATP63** :  Framework Spring, utilizando sua camada de persistencia - Spring DATA - Repository.
+>[\atividadep62](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep62/)
+
+- **ATP64** :  Framework Spring, utilizando sua camada de persistencia - Spring DATA e tambem sua camada web com Spring MVC.
+>[\atividadep64](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep64/)
+
+- **ATP65** :  Framework Spring, utilizando persistência, Web MVC, Thymeleaf e tambem o bootstrap.
+>[\atividadep64](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep64/)
+
+- **ATP66** :  Framework Spring, utilizando persistência, Web MVC, Thymeleaf, bootstrap e tambem API REST.
+>[\atividadep64](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep64/)
+
+- **ATP67** :  Framework Spring, utilizando persistência, Web MVC, Thymeleaf, bootstrap e tambem API REST - Ordenação e Filtro no banco de dados.
+>[\atividadep64](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep64/)
+
+- **ATP68** :  Framework Spring, utilizando persistência, Web MVC, Thymeleaf, bootstrap e tambem API REST - Composição entre classes e relacionamento entre tabelas.
+>[\atividadep64](https://github.com/lorenascimentoo/academiatecnica-pratica/tree/main/src/modulo2/atividadep64/)
+
+
+
+
+
